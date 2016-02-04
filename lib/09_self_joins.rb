@@ -232,6 +232,6 @@ def craiglockhart_to_sighthill
     INNER JOIN routes AS r2 ON r2.num = r1.num
     JOIN stops AS stops2 ON r2.stop_id = stops2.id
   WHERE
-    stops1.name = 'Craiglockhart' --AND stops2.name 'Sighthill'
+    stops1.name = 'Craiglockhart' AND stops2.name 'Sighthill'
   SQL
 end
